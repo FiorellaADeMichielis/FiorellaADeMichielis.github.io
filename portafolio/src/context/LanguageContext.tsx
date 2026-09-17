@@ -5,6 +5,7 @@ import {type Language } from '../data/portfolio';
 interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
+  setLanguage: (lang: Language) => void;
 }
 
 // Creamos el contexto (inicia vacío)
@@ -21,7 +22,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, toggleLanguage, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
