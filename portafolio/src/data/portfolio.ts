@@ -68,7 +68,7 @@ export interface PortfolioData {
     name: string;
     email: string;
     github: string;
-    phone: string;
+    phone?: string;
     role: Record<Language, string>;
     bio: Record<Language, string>;
   };
@@ -86,7 +86,6 @@ export const portfolioData: PortfolioData = {
     name: "Ana Fiorella Arduino De Michielis",
     email: "fiorellaarduino801@gmail.com",
     github: "https://github.com/FiorellaADeMichielis",
-    phone: "+54 9 0379 4347826",
     role: {
       es: "Desarrolladora Full Stack Junior | React · TypeScript · Node.js",
       en: "Junior Full Stack Developer | React · TypeScript · Node.js"
